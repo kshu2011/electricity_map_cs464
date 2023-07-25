@@ -1,0 +1,38 @@
+Style Guide
+        
+This page details the style guide to follow for all contributors. The standards and guidelines set forth are intended to ensure readability and maintainability as well.
+
+Programming Languages
+
+This project has both web and mobile applications, therefore it uses multiple languages, they are: Java, Python, Type Script and Swift. To maintain readability, the variable and function names should follow camel case style. Also, names should be spelled out and not shortened, for example:
+If have a function that is meant to save/add user information then
+addUserLoginInformation -> is acceptable
+addUsrLgnInfo -> this is NOT acceptable
+The reason is that we have a diverse set of contributors with various backgrounds, when the variables are spelled it, it is easy for everyone to understand what it is.
+
+Images
+
+This application works on both the web browser and android and iOS applications, so the proper image file and size should be used. Ideally, images should use the png format and as for the image names, they should be lower case and use dashes inbetween words, for example:
+An image of a beach house: beach-house.png
+
+Assets, such as icons
+
+For icon assets, multiple sizes must be provided for the mobile devices, this way it ensures that it will work regardless of the customers device and the application can be displayed properly. Directories for each size must be created for the asset and the naming convention for the directory is:
+For small image it would have to end in lhdpi - for example: left-arrow-lhdpi
+For medium image it would have to end in mhdpi - for example: left-arrow-mhdpi For large image it would have to end in xhdpi - for example: left-arrow-xhdpi
+For extra large image it would have to end in xxhdpi - for example: left-arrow-xxhdpi
+
+This ensures every contributor can understand and find the needed assets easily and quickly.
+
+Json format:
+
+Json is used widely in both web and mobile applications. When creating a configuration file or resource that is json, it must be organized for readability. For example:
+This is proper but difficult for humans to read:
+{ “user”: “UserName123”, “password”: “ngklweg45@”, “contact”: {“phone”:
+“1234567890”, “email”: “new@yahoo.com”}} Instead use tabs and newline like:
+{
+“user”: “UserName123”, “password”: “ngklweg45@”,
+“contact”: {
+“phone”: “1234567890”,
+“email”: “new@yahoo.com” }
+}
